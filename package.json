@@ -1,0 +1,27 @@
+{
+  "name": "leroy-merlin",
+  "version": "1.0.0",
+  "description": "Test technique",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test unit ": "jest ./test/unit",
+    "test e2e ": "jest ./test/e2e"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "author": "Ismail Ghrab",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "babel-jest": "^29.7.0"
+  }
+}
