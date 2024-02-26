@@ -5,14 +5,14 @@ describe('Filtering function', () => {
     {
       name: 'Country1',
       people: [
-        { name: 'Person1', animals: [{ name: 'Cat' }, { name: 'Dog' },{name: 'Oryx'}] },
+        { name: 'Person1', animals: [{ name: 'Cat' }, { name: 'Dog' }, { name: 'Oryx' }] },
         { name: 'Person2', animals: [{ name: 'Bird' }, { name: 'Rabbit' }] }
       ]
     },
     {
       name: 'Country2',
       people: [
-        { name: 'Person3', animals: [{ name: 'Lion' }, { name: 'Tiger' },{name: 'John Dory'}] },
+        { name: 'Person3', animals: [{ name: 'Lion' }, { name: 'Tiger' }, { name: 'John Dory' }] },
         { name: 'Person4', animals: [{ name: 'Elephant' }, { name: 'Snake' }] }
       ]
     }
@@ -70,7 +70,7 @@ describe('Filtering function', () => {
 
   it('should return empty array if filter does not match any animal', () => {
     const filteredData = filterPeopleFromCountry('xyz', testData);
-    expect(filteredData).toEqual([]);
+    expect(filteredData).toEqual("Sorry, theirs is no animals include theirs name 'xyz'");
   });
 
 

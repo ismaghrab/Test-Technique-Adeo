@@ -14,7 +14,8 @@ export default function filterPeopleFromCountry(filter, data) {
         }
         return country
     }, [])
-    return countries
+    if (countries.length > 0) return countries
+    else return `Sorry, theirs is no animals include theirs name '${filter}'`
 }
 
 /**

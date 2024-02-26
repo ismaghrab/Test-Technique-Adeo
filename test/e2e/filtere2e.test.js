@@ -68,7 +68,7 @@ describe('Filter End to end test ', () => {
 
     it('should return an empty array if filter doesnt match', () => {
         const consoleOutput = execSync('node app.js --filter="xyz"', { encoding: 'utf-8' });
-        expect(consoleOutput).toContain('[]')
+        expect(consoleOutput).toContain("Sorry, theirs is no animals include theirs name 'xyz'")
     });
 
     it('should return an error for empty  filter ', () => {
